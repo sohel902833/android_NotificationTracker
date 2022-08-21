@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/appbarId"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_marginTop="45dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/avatar"
+                />
+
+            <TextView
+                android:id="@+id/setting_emailTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Email"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/aclonica"
+                android:textColor="@color/greenDark"
+                android:layout_marginTop="20dp"
+                />
+                <TextView
+                    android:id="@+id/setting_statusTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/aclonica"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="7dp"
+                />
+
+            <Button
+                android:id="@+id/setting_turnOnNotificationListenerBtn"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Turn On notification listener"
+                android:paddingRight="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/red_button_bg"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                />
+            <TextView
+                android:id="@+id/notification_forward_email_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification Forward Email:"
+                android:textSize="14sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/aclonica"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+
+
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/setting_emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:hint="Email"
+                    android:padding="15dp"
+                    android:textColorHint="@color/blackAsh"
+                    android:textStyle="bold"
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_marginRight="20dp"
+                android:layout_gravity="right"
+                android:id="@+id/setting_updateNotificationEmailBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Update"
+                android:background="@drawable/green_button_bg"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                />
+
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Send Notification:"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/aclonica"
+                    />
+                <TextView
+                    android:id="@+id/setting_sendNotificationStatusTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="On"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/greenDark"
+                    android:fontFamily="@font/aclonica"
+                    />
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/setting_turnOffNotificationButton"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Turn Off"
+                    android:background="@drawable/red_button_bg"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    />
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/setting_turnOnNotificationButton"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Turn On"
+                    android:background="@drawable/green_button_bg"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Message Notification:"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/aclonica"
+                    />
+                <TextView
+                    android:id="@+id/setting_sendMessageAppNotificationStatusTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="On"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/greenDark"
+                    android:fontFamily="@font/aclonica"
+                    />
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/setting_turnOffMessageAppNotificationButton"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Turn Off"
+                    android:background="@drawable/red_button_bg"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    />
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/setting_turnOnMessageAppNotificationButton"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Turn On"
+                    android:background="@drawable/green_button_bg"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:id="@+id/setting_logoutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Logout"
+                android:background="@drawable/red_button_bg"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

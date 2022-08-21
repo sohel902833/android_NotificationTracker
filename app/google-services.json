@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "923834893331",
+    "project_id": "notificationtracker-54b3e",
+    "storage_bucket": "notificationtracker-54b3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923834893331:android:16e9142463e90376d76be6",
+        "android_client_info": {
+          "package_name": "com.example.notificationtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923834893331-ggo9ivehh6pr11pek1q2qlq5c1uparu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxiMbTNZ4Vd_LEJB2CZ8dN-3tSHU15PmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923834893331-ggo9ivehh6pr11pek1q2qlq5c1uparu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
