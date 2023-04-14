@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "923834893331",
-    "project_id": "notificationtracker-54b3e",
-    "storage_bucket": "notificationtracker-54b3e.appspot.com"
+    "project_number": "1017760119871",
+    "firebase_url": "https://daraz-8e787-default-rtdb.firebaseio.com",
+    "project_id": "daraz-8e787",
+    "storage_bucket": "daraz-8e787.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:923834893331:android:16e9142463e90376d76be6",
+        "mobilesdk_app_id": "1:1017760119871:android:e4a5722be75d12f70d0c8a",
         "android_client_info": {
-          "package_name": "com.example.notificationtracker"
+          "package_name": "com.example.tracenotification"
         }
       },
       "oauth_client": [
         {
-          "client_id": "923834893331-ggo9ivehh6pr11pek1q2qlq5c1uparu9.apps.googleusercontent.com",
+          "client_id": "1017760119871-8u26k9e8f2oulr4a3vf9g87vmkq67n14.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBxiMbTNZ4Vd_LEJB2CZ8dN-3tSHU15PmY"
+          "current_key": "AIzaSyAOlkc3SgtrmEbqEBuyF36WxfxP1ekwPO4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "923834893331-ggo9ivehh6pr11pek1q2qlq5c1uparu9.apps.googleusercontent.com",
+              "client_id": "1017760119871-8u26k9e8f2oulr4a3vf9g87vmkq67n14.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

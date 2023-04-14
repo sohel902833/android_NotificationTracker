@@ -17,4 +17,16 @@
         android:id="@+id/notificationListRecyclerViewId"
         />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="#E91E63"
+        android:src="@drawable/add_icon"
+        android:tint="@color/white"
+        android:id="@+id/floatingButtonId"
+        />
+
 </RelativeLayout>

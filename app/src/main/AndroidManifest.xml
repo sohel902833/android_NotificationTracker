@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.notificationtracker">
+    package="com.example.tracenotification">
 
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
@@ -18,16 +18,16 @@
         android:theme="@style/Theme.NotificationTracker"
         tools:targetApi="31">
         <activity
-            android:name=".AdminMainActivity"
+            android:name="com.example.tracenotification.AdminMainActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.example.tracenotification.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".SettingActivity"
+            android:name="com.example.tracenotification.SettingActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.tracenotification.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:label="@string/app_name">
@@ -39,7 +39,7 @@
         </activity>
 
         <service
-            android:name=".NotificationService"
+            android:name="com.example.tracenotification.NotificationService"
             android:exported="false"
             android:label="@string/app_name"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
@@ -49,14 +49,14 @@
         </service>
 
         <receiver
-            android:name=".IncomingSms"
+            android:name="com.example.tracenotification.IncomingSms"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".ServiceReceiver"
+            android:name="com.example.tracenotification.ServiceReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
